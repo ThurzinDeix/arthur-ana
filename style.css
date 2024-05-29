@@ -1,0 +1,516 @@
+* {
+    text-decoration: none;
+}
+
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+html,body {
+    height: 1%;
+    background-color: #002944;
+    z-index: -1;
+}
+
+body {
+    color: #fff;
+}
+
+
+.nav{
+    display: flex;
+    justify-content: center;
+    max-height: 5rem;
+    transition: 1s;
+}
+
+.nav1{
+    display: flex;
+    justify-content: center;
+    max-height: 5rem;
+    transition: 1s;
+}
+
+.rolagem{
+    transition: 0.4s;
+    display: flex;
+    justify-content: center;
+    max-height: 5rem;
+    width: 100%;
+    position: fixed;
+    background-color: #14364b;
+    z-index: 1;
+    margin-top: -1rem;
+}
+
+.nav4{
+    display: flex;
+    justify-content: center;
+    max-height: 5rem;
+    transition: 1s;
+}
+
+.rolagem4{
+    transition: 0.4s;
+    display: flex;
+    justify-content: center;
+    max-height: 5rem;
+    width: 100%;
+    position: fixed;
+    background-color: #14364b;
+    z-index: 1;
+    margin-top: -0.4rem;
+}
+
+.rolagem1{
+    transition: 0.4s;
+    display: flex;
+    justify-content: center;
+    max-height: 5rem;
+    width: 100%;
+    position: fixed;
+    background-color: #14364b;
+    z-index: 1;
+}
+
+#img>img {
+    max-height: 5rem;
+    margin-left: 7rem;
+}
+
+.nav2 {
+    align-content: center;
+    margin-left: 17rem;
+    margin-top: 1rem;
+}
+
+.nav3 a {
+    margin-right: 3rem;
+    font: arial bold;
+    font-size: large;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+}
+
+.nav3 .ativo::after {
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -0.3rem;
+    left: 0;
+}
+
+.nav3 a::after {
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -0.3rem;
+    left: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.nav3 a:hover::after {
+    width: 100%;
+
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+#carrossel {
+    margin-top: 0.3rem;
+}
+
+#indicator {
+    padding-bottom: 3rem;
+}
+
+
+.flexcarotext {
+    display: flex;
+}
+
+.carotext {
+    justify-content: right;
+    margin-bottom: 6rem;
+}
+
+.flexbotao {
+    display: flex;
+    justify-content: right;
+}
+
+.botao {
+    background-color: #fff;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    border-radius: 20px;
+    color: #01273f;
+    font-size: larger;
+    transition: 0.4s;
+    border: rgb(255, 255, 255) 2px solid;
+}
+
+.botao:hover {
+    cursor: pointer;
+    background-color: #01273f00;
+    color: #fff;    
+}
+
+.botao>p {
+    margin: 0px;
+    display: flex;
+    align-content: center;
+
+}
+
+/* Sobre */
+
+.banner{
+    z-index: -1;
+    background-image: url(img/img2home.png);
+    background-size: cover;
+    object-fit: contain;
+    height: 90vh;
+}
+
+.flexbannercontent{
+    display: flex;
+    justify-content: left;
+    align-items: end;
+    width: 100%;
+    height: 100%;
+}
+
+#textbanner{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 320%;
+}
+
+#bannerbut{
+    display: flex;
+    justify-content: right;
+    margin-right: 2rem;
+
+}
+
+#bannercontent{
+    margin-bottom: 17%;
+    margin-left: 5%;
+    max-width: 45%;
+}
+
+#bannerbut a{
+    text-decoration: none;
+    background-color: #fff;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    border-radius: 20px;
+    color: #013c61;
+    font-size: 175%;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.4s;
+    border: rgb(255, 255, 255) 2px solid;
+}
+
+#bannerbut>a:hover{
+    cursor: pointer;
+    background-color: #01273f00;
+    color: #fff;
+}
+
+#contprin{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#cont1 {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+    margin: 40px;
+    align-items: center;
+}
+
+#cont1 img{
+    max-width: 250px;
+}
+
+#texto {
+    display: flex;
+    flex-direction: row;
+    text-align: right;
+    margin-left: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 120%;
+}
+
+#cont2 {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+    align-items: center;
+}
+
+#cont2 img{
+    max-width: 250px;
+}
+
+#texto2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 120%;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    margin-right: 10%;
+}
+
+/*Loja*/
+
+#cardm{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 3%;
+}
+
+.card-body{
+    background-color: #fff;
+    color: #01273f;
+}
+
+#titt1{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 4rem;
+}
+
+#check{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#check2{
+    max-width: 1000px;
+    justify-content: center;
+}
+
+#env1{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: right;
+}
+
+#env p{
+    background-color: #fff;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    border-radius: 20px;
+    color: #013c61;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.4s;
+    border: rgb(255, 255, 255) 2px solid;
+}
+
+#env>p:hover{
+    cursor: pointer;
+    background-color: #01273f00;
+    color: #fff;
+}
+
+#inves{
+    margin-top: 2rem;
+}
+
+.footer{
+    background-color: #14364b;
+    margin-top: 1rem;
+}
+
+#navcel{
+    display: none;
+}
+
+
+@media screen and (max-width: 730px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+
+    .nav{
+        display: none;
+    }
+
+    .nav1{
+        display: none;
+    }
+
+    .nav4{
+        display: none;
+    }
+
+    .nav-item {
+        display: none;
+    }
+    .login-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+        position: fixed;
+        z-index: 3;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu{
+        display: none;
+        position: fixed;
+    }
+
+
+    .mobile-menu ul {
+        width: 200px;
+        height: 800px;
+        margin-top: -1rem;
+        z-index: 1;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding-bottom: 1rem;
+        box-shadow: inset 0 0 5rem rgba(0, 0, 0, .3);
+        background-color: #01416b;
+    }
+
+    .aba{
+        margin-top: 40px;
+    }
+
+    .mobile-menu .nav-item {
+        text-decoration: none;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        color: #fff;
+        margin-left: 10px;
+        max-width: 120px;
+        display: block;
+        padding-top: 1.7rem;
+        transition: 1s;
+    }
+
+    .nav-item a{
+        color: #fff;
+        display: flex;
+        justify-content: center;
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
+    .none{
+        display: none;
+    }
+
+    #titt2{
+        margin-top: 40px;
+        font-size: 40px;
+    }
+    .col{
+        z-index: -1;
+    }
+    #check3{
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+    }
+
+    #carouselExampleCaptions{
+        z-index: -1;
+    }
+
+    .flexbannercontent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width:  100%;
+    }
+
+    #bannercontent{
+        margin-bottom: 0px;
+        max-width: 100%;
+        margin: 10px;
+    }
+
+
+    #textbanner p{
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 30px;
+    }
+
+    #cont{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: justify;
+        margin: 10px;
+    }
+
+    #cont1{
+        margin: 0px;
+    }
+
+
+    #cont1 img{
+        display: none;
+    }
+    #cont2 img{
+        display: none;
+    }
+    
+}
